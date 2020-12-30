@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<section>
+    <header>
+        <a href="#" class="logo" >Cihangir</a>
+        <div class="toggle" onclick="menuToggle();"></div>
+    </header>
+    <div class="glass"></div>
+    <div class="content">
+        <h2>xCihangir<br><span>Youtube</span></h2>
+    </div>
+    <video src="/Beach.mp4" autoplay mute loop></video>
+    <ul class="sci">
+        <li style="--i:1"><a href="#">Facebook</a></li>
+        <li style="--i:2"><a href="#">Twitter</a></li>
+        <li style="--i:3"><a href="#">İnstagram</a></li>
+    </ul>
+    <ul class="navi">
+        <li style="--i:1"><a href="#">Home</a></li>
+        <li style="--i:2"><a href="#">Blog</a></li>
+        <li style="--i:3"><a href="#">About</a></li>
+    </ul>
+</section>
+
+
+
+<script type="text/javascript">
+
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.toggle');
+        const section = document.querySelector('section');
+        toggleMenu.classList.toggle('active');
+        section.classList.toggle('active');
+    }
+
+</script>
+
+
+</body>
+
+</html>
